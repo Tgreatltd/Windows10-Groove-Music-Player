@@ -72,6 +72,13 @@ let sportify1=document.getElementById('sportify1');
 let sportify=document.getElementById('sportify');
 let dura=document.getElementById('dura');
 let king=document.getElementById('king');
+let showCenter=document.getElementById('showCenter');
+let lumo=document.getElementById('lumo');
+let iyke1=document.getElementById('iyke1');
+let iyke2=document.getElementById('iyke2');
+let iyke3=document.getElementById('iyke3');
+let iyke4=document.getElementById('iyke4');
+let naming=document.getElementById('naming');
 let index=0
 let songObj;
 let playMusic;
@@ -162,6 +169,10 @@ display.innerHTML +=` <button onclick="findSong('${song.name}')" id="disp">
 <div id="unknown" class="unknown">Unknown Genre</div>
 <div id="rate" class="unknown"></div>
 </button>`
+showCenter.innerHTML+=
+` <button onclick="findSong('${song.name}')" id="desp">
+<div id="in1">${song.name}</div></button>
+`
 
 })
 }
@@ -210,6 +221,8 @@ fapause.style.display='none'
 fapausem.style.display='none'
 faplay.style.display='block'
 faplaym.style.display='inline'
+iyke2.style.display='none'
+iyke3.style.display='block'
 if (playMusic) {
     mp3.pause() 
     playMusic=false 
@@ -219,6 +232,8 @@ if (playMusic) {
 }
 function setSong(p){
 title.innerHTML=p
+naming.innerHTML=p
+
 }
 
 function listen(){
@@ -226,6 +241,8 @@ fapause.style.display='block'
 fapausem.style.display='inline'
 faplay.style.display='none'
 faplaym.style.display='none'
+iyke2.style.display='block'
+iyke3.style.display='none'
 if (title.innerHTML=='') {
 faplay.style.display='block'
 fapause.style.display='none'
@@ -266,6 +283,7 @@ starting.innerHTML=sliding.value
 // mp3.volume=sliding.value/100
 // }
 mp3.volume=sliding.value/100
+mp3.volume=lumo.value/100
 }
 function changeDuration(){
  sliderPosition= mp3.duration *  (slider.value/100);
@@ -511,6 +529,7 @@ slider.value=0
 sliderm.value=0
 title.innerHTML=songObj.name
 nowPlaying.innerHTML=songObj.name
+naming.innerHTML=songObj.name
 fapause.style.display='block'
 faplay.style.display='none'
 playing()
@@ -536,8 +555,11 @@ playNow.innerHTML =`<button onclick="findSong('${songObj.name}')" id="dispp">
 console.log(songObj); 
 title.innerHTML=songObj.name
 nowPlaying.innerHTML=songObj.name
+naming.innerHTML=songObj.name
+
 slider.value=0
 sliderm.value=0
+
 fapause.style.display='block'
 faplay.style.display='none'
 playing()
@@ -557,14 +579,14 @@ playing()
 function loaded(){
 timer =setInterval(() => {
 move++
-if (move==5) {
+if (move==1) {
   groovy.style.display='block'  
   king.style.display='none';
   clearInterval(timer)
 }
 }, 1000);
 }
-loaded()
+// loaded()
 
 // fetch('https://api.napster.com/v2.1/tracks/top?apikey=ZTk2YjY4MjMtMDAzYy00MTg4LWE2MjYtZDIzNjJmMmM0YTdm')
 // .then(res=> res.json())
@@ -574,13 +596,19 @@ loaded()
 // let newar=[{id:0},...ar]
 // console.log(newar);
 let cur=0
+let cu;
+let dur;
+let durable
 function updtaeSlider(){
 if ((mp3.duration)) {
    position= mp3.currentTime*100/mp3.duration;
-   slider.value=position 
-   end.innerHTML=(mp3.duration/60)
+   slider.value=position
+   dur=(mp3.duration/60) 
+   end.innerHTML=dur.toFixed(2)
    cur=(mp3.currentTime/60)
-   start.innerHTML=cur++
+   cu= cur.toFixed(2)
+   start.innerHTML=cu++
+   
 }
 
 if (mp3.ended) { 

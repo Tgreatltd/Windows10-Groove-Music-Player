@@ -16,7 +16,7 @@
       display: none;
       }
       #groovy{
-      display: none;
+      /* display: none; */
       }
       #up{
       display: none;
@@ -24,12 +24,22 @@
       #playlist{
       display: none;
       }
+      
       #addlist{
       display: none;
       }
       #king{
       display: none;
       }
+      #kinging{
+      display: none;
+      }
+      #flat{
+        /* display: none; */
+      }
+    #responsive{
+      display: none;
+    }
       
     </style>
     <link rel="stylesheet" href="./groove.css">
@@ -70,7 +80,41 @@
   <i class="fa-solid fa-trash"></i>
  
   -->
-  
+  <div id="responsive">
+  <div>
+    <div id="showCenter"></div>
+  </div>
+  <!-- play bar -->
+<div id="showbar">
+  <div id="naming"></div>
+  <div id="iyke">
+    <div id="iyke1" class="iyke1" onclick="previous()"> <i class="fa-solid fa-backward-step"></i></div>
+    <div id="iyke2" class="iyke1" ><i class="fa-solid fa-pause" onclick="pauseMusic()"></i></div>
+    <div id="iyke3" class="iyke1"> <i class="fa-solid fa-play" onclick="listen()"></i></div>
+    <div id="iyke4" class="iyke1" onclick="next()"> <i class="fa-solid fa-forward-step"></i></div>
+   
+  </div>
+  <!-- volume -->
+<div id="lumin">
+  <input id="lumo" type="range" value="20" onchange="changeVolume()">
+</div>
+<!-- duration -->
+<div id="cell">
+  <input id="cello" type="range">
+</div>
+</div show bar>
+<div id="showicon">
+  <div id="label"><i class="fa-solid fa-gear"></i><br> feed</div>
+  <div id="label"> <i class="fa-solid fa-sliders"></i><br>playlist</div>
+  <div id="label"> <i class="fa-solid fa-shuffle"></i><br><label for="">Discover</label> </div>
+  <div id="label"><i class="fa-solid fa-magnifying-glass"></i><br><label for="">search</label></div>
+  <div id="label"><i class="fa-solid fa-user"></i><br><label for="">my library</label></div>
+</div show icon>
+</div responsive>
+
+
+<!-- main music -->
+ <div id="flat">
 <div id="groovy">
 <div id="side">
  <div id="gro">
@@ -234,27 +278,7 @@
  <!-- recent play -->
 
  <div id="recentplay">
-   <div id="recentt">Recent play</div>
-   <button id="shuffleall"> <i class="fa-solid fa-shuffle"></i></button>
-   <button id="allmusic">Shuffle all music</button>
-   <div id="box">
-   <button id="box1"><div id="square">
-    <div id="circle">
-      <div id="dot"></div>
-    </div>
-  </div>
-</button>
-   <button id="box2">
-    <div id="used"> <i class="fa-regular fa-user"></i></div>
-   </button>
-   </div>
-   
-   <button id="appear">Unknown Album
-     <p id="appearing">Album by Unkwon Artist</p>
-   </button>
-   <button id="dice">Unknown Artist
-    <p id="dice1">Artist</p>
-   </button>
+  
  </div recentplay>
 
  <!-- correct Search result -->
@@ -275,18 +299,12 @@
   <div id="else">Try searching for something else</div>
 </div incorrect>
 </div groovy>
+</div> 
 
 <!-- Now playing -->
 
 <div id="up">
   <div id="arrow"><i class="fa-solid fa-arrow-left" onclick="back()"></i></div>
-  <div id="boxm">
-    <button id="boxm1"><div id="squarem">
-     <div id="circlem">
-       <div id="dotm"></div>
-     </div></button>
-   </div>
-
    <div id="noun">
     <div id="nowplaying"></div>
     <div id="magic">Unknown Artist * Unknown Album</div>
@@ -346,9 +364,11 @@
 </div playlist1> -->
 
 <!-- load page -->
+<div id="kinging">
 <div id="king">
   <div id="king1"><img id="king2" src="./image/groov music logo.jpg" alt="">
   </div>
+</div>
 </div>
 
 
@@ -385,6 +405,8 @@
   <p id="what2">Go to Album</p>
 </div>
 </div addlist>
+
+
 
 </body>
 </html>
