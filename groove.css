@@ -1131,7 +1131,41 @@ margin: 0px;
     #lumin{
     margin-left: 70%;
     }
+}
+
+@media(max-width:500px){
+    #flat{
+    display: none;
     }
+    #groovy{
+    display: none;
+    }
+    #responsive{
+    display: block;
+    }
+    #desp{
+    width:97%;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 1%;
+    height: 50px;
+ }
+#showbar, #showicon{
+margin: 0px;
+width: 98%;
+
+}
+#lumin{
+margin-left: 70%;
+}
+#lumo{
+width: 70%;
+margin-left: 20px;
+}
+#naming{
+font-size: 10px;
+}
+}
 
 
 
