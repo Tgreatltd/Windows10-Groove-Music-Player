@@ -1133,7 +1133,7 @@ margin: 0px;
     }
 }
 
-@media(max-width:500px){
+@media(max-width:700px){
     #flat{
     display: none;
     }
