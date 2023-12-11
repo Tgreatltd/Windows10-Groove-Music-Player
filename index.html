@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      #content{
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #content {
       /* display: none; */
-      }
-      #recentplay{
-      display: none;
-      }
-      #result{
-      display: none;
-      }
-      #groovy{
-      /* display: none; */
-      }
-      #up{
-      display: none;
-      }
-      #playlist{
-      display: none;
-      }
-      
-      #addlist{
-      display: none;
-      }
-      #king{
-      display: none;
-      }
-      #kinging{
-      display: none;
-      }
-      #flat{
-        /* display: none; */
-      }
-    #responsive{
+    }
+
+    #recentplay {
       display: none;
     }
-      
-    </style>
-    <link rel="stylesheet" href="./groove.css">
-     <!-- <link rel="stylesheet" href="./CSS/bootstrap.css">
+
+    #result {
+      display: none;
+    }
+
+    #groovy {
+      /* display: none; */
+    }
+
+    #up {
+      display: none;
+    }
+
+    #playlist {
+      display: none;
+    }
+
+    #addlist {
+      display: none;
+    }
+
+    #king {
+      display: none;
+    }
+
+    #kinging {
+      display: none;
+    }
+
+    #flat {
+      /* display: none; */
+    }
+
+    #responsive {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" href="./groove.css">
+  <!-- <link rel="stylesheet" href="./CSS/bootstrap.css">
      -->
-     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
 
-<!-- jQuery library -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <link rel="stylesheet" href="./bootstrap/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-    <!-- <i class="fa-solid fa-arrow-left"></i>
+  <!-- <i class="fa-solid fa-arrow-left"></i>
    
     
     
@@ -81,279 +92,278 @@
  
   -->
   <div id="responsive">
-  <div>
-    <div id="showCenter"></div>
-  </div>
-  <!-- play bar -->
-<div id="showbar">
-  <div id="naming"></div>
-  <div id="iyke">
-    <div id="iyke1" class="iyke1" onclick="previous()"> <i class="fa-solid fa-backward-step"></i></div>
-    <div id="iyke2" class="iyke1" ><i class="fa-solid fa-pause" onclick="pauseMusic()"></i></div>
-    <div id="iyke3" class="iyke1"> <i class="fa-solid fa-play" onclick="listen()"></i></div>
-    <div id="iyke4" class="iyke1" onclick="next()"> <i class="fa-solid fa-forward-step"></i></div>
-   
-  </div>
-  <!-- volume -->
-<div id="lumin">
-  <input id="lumo" type="range" value="20" onchange="changeVolume()">
-</div>
-<!-- duration -->
-<div id="cell">
-  <input id="cello" type="range">
-</div>
-</div show bar>
-<div id="showicon">
-  <div id="label"><i class="fa-solid fa-gear"></i><br> feed</div>
-  <div id="label"> <i class="fa-solid fa-sliders"></i><br>playlist</div>
-  <div id="label"> <i class="fa-solid fa-shuffle"></i><br><label for="">Discover</label> </div>
-  <div id="label"><i class="fa-solid fa-magnifying-glass"></i><br><label for="">search</label></div>
-  <div id="label"><i class="fa-solid fa-user"></i><br><label for="">my library</label></div>
-</div show icon>
-</div responsive>
+    <div>
+      <div id="showCenter"></div>
+    </div>
+    <!-- play bar -->
+    <div id="showbar">
+      <div id="naming"></div>
+      <div id="iyke">
+        <div id="iyke1" class="iyke1" onclick="previous()"> <i class="fa-solid fa-backward-step"></i></div>
+        <div id="iyke2" class="iyke1"><i class="fa-solid fa-pause" onclick="pauseMusic()"></i></div>
+        <div id="iyke3" class="iyke1"> <i class="fa-solid fa-play" onclick="listen()"></i></div>
+        <div id="iyke4" class="iyke1" onclick="next()"> <i class="fa-solid fa-forward-step"></i></div>
 
-
-<!-- main music -->
- <div id="flat">
-<div id="groovy">
-<div id="side">
- <div id="gro">
-   <div id="mico"><i class="fa-solid fa-arrow-left"></i></div>
-   <div id="grono"> Groove Music</div>
- </div>
- <div id="bars"><i class="fa-solid fa-bars"></i></div>
-<div id="glass">
-    <div id="inp"><input id="put" type="text" placeholder="Search"></div>
-    <div id="mag"> <i class="fa-solid fa-magnifying-glass"
-       onclick="sear()"></i></div>
-</div>
-<div id="house">
-<div id="fam" onclick="myMusic()">
-  <button id="fami"><i class="fa-solid fa-music"></i></button>
-  <button  id="fa">My music</button>
-</div>
-<div id="recent" onclick="recentlyPlayed()">
-   <button id="rec"> <i class="fa-regular fa-clock"></i></button>
-   <button   id="reco">Recent plays</button>
-</div>
-<div id="now" onclick="presentPlaying()">
-    <button  id="no"> <i class="fa-solid fa-chart-simple"></i></button>
-    <button  id="non">Now playing</button>
-</div>
-<div id="der"></div>
-<div id="playl" onclick="playlists()">
-    <button id="lis"> <i class="fa-solid fa-sliders"></i></button>
-    <button id="list">Playlists</button>
-</div>
-
-
-  
-    <!-- Button to Open the Modal -->
-    <button onclick="addition()" id="plusa" type="button" class="" data-toggle="modal" data-target="#myModal">
-      <i class="fa-solid fa-plus"></i>
-    </button>
-  
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-        
-          <!-- Modal Header -->
-          
-          
-          <!-- Modal body -->
-          <div class="modal-body" id="body">
-          <button id="icon">
-            <i class="fa-solid fa-sliders" id="slid"></i>
-          </button>
-          <input id="contain" type="text">
-          <div id="by">Created by you</div>
-          <button onclick="create()"  id="but1" type="button" class="btn btn-primary">Create Playlist</button>
-          <button id="but2" type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
-          </div>
-          
-          <!-- Modal footer -->
-          <div class="modal-footer" id="footer">
-           
-            <!-- <button id="but2" type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button> -->
-          </div>
-          
-        </div>
       </div>
+      <!-- volume -->
+      <div id="lumin">
+        <input id="lumo" type="range" value="20" onchange="changeVolume()">
+      </div>
+      <!-- duration -->
+      <div id="cell">
+        <input id="cello" type="range">
+      </div>
+    </div show bar>
+    <div id="showicon">
+      <div id="label"><i class="fa-solid fa-gear"></i><br> feed</div>
+      <div id="label"> <i class="fa-solid fa-sliders"></i><br>playlist</div>
+      <div id="label"> <i class="fa-solid fa-shuffle"></i><br><label for="">Discover</label> </div>
+      <div id="label"><i class="fa-solid fa-magnifying-glass"></i><br><label for="">search</label></div>
+      <div id="label"><i class="fa-solid fa-user"></i><br><label for="">my library</label></div>
+    </div show icon>
+  </div responsive>
+
+
+  <!-- main music -->
+  <div id="flat">
+    <div id="groovy">
+      <div id="side">
+        <div id="gro">
+          <div id="mico"><i class="fa-solid fa-arrow-left"></i></div>
+          <div id="grono"> Groove Music</div>
+        </div>
+        <div id="bars"><i class="fa-solid fa-bars"></i></div>
+        <div id="glass">
+          <div id="inp"><input id="put" type="text" placeholder="Search"></div>
+          <div id="mag"> <i class="fa-solid fa-magnifying-glass" onclick="sear()"></i></div>
+        </div>
+        <div id="house">
+          <div id="fam" onclick="myMusic()">
+            <button id="fami"><i class="fa-solid fa-music"></i></button>
+            <button id="fa">My music</button>
+          </div>
+          <div id="recent" onclick="recentlyPlayed()">
+            <button id="rec"> <i class="fa-regular fa-clock"></i></button>
+            <button id="reco">Recent plays</button>
+          </div>
+          <div id="now" onclick="presentPlaying()">
+            <button id="no"> <i class="fa-solid fa-chart-simple"></i></button>
+            <button id="non">Now playing</button>
+          </div>
+          <div id="der"></div>
+          <div id="playl" onclick="playlists()">
+            <button id="lis"> <i class="fa-solid fa-sliders"></i></button>
+            <button id="list">Playlists</button>
+          </div>
+
+
+
+          <!-- Button to Open the Modal -->
+          <button onclick="addition()" id="plusa" type="button" class="" data-toggle="modal" data-target="#myModal">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+
+
+                <!-- Modal body -->
+                <div class="modal-body" id="body">
+                  <button id="icon">
+                    <i class="fa-solid fa-sliders" id="slid"></i>
+                  </button>
+                  <input id="contain" type="text">
+                  <div id="by">Created by you</div>
+                  <button onclick="create()" id="but1" type="button" class="btn btn-primary">Create Playlist</button>
+                  <button id="but2" type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer" id="footer">
+
+                  <!-- <button id="but2" type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div id="showplaylist" style="margin-right: 40px;"></div>
+          <div id="deleteplaylist"></div>
+
+        </div>
+        <!-- <div id="distance"></div> -->
+        <div id="line"></div>
+        <div id="could">
+          <button id="sign"> <i class="fa-regular fa-clock"></i></button>
+          <button id="in">Can't sign in</button>
+        </div>
+        <div id="gear"><i class="fa-solid fa-gear"></i></div>
+        <div id="sportify">
+          <button id="tify"><i class="fa-brands fa-spotify"></i></button>
+          <button id="stream" onmouseover="river()">Stream millions of songs free</button>
+          <button id="get" onmouseover="ocean()">Get sportify</button>
+        </div>
+        <div id="long"></div>
+      </div side><br>
+
+      <!-- down -->
+
+      <div id="down">
+        <div id="cono">
+          <div id="squaro">
+            <div id="circlo">
+              <div id="doto"></div>
+            </div></button>
+          </div>
+        </div>
+        <div id="text">
+          <button id="title"></button><br>
+          <button id="art">Unknown Artist</button>
+        </div>
+        <div id="controls">
+          <button id="shu"> <i class="fa-solid fa-shuffle"></i></button>
+          <button id="backward" onclick="previous()"> <i class="fa-solid fa-backward-step"></i></button>
+          <button id="faplay"><i class="fa-solid fa-play" onclick="listen()"></i></button>
+          <button id="fapause"><i class="fa-solid fa-pause" onclick="pauseMusic()"></i></button>
+          <button id="forward" onclick="next()"> <i class="fa-solid fa-forward-step"></i></button>
+          <button id="forward"></button>
+          <button id="repeat1" onclick="startAll()"><i class="fa-solid fa-repeat"></i></button>
+          <button id="repeatone" onclick="repeatAll()"><i class="fa-solid fa-repeat"><span
+                id="one">1</span></i></button>
+
+          <!-- volume -->
+
+          <div id="volume">
+            <div id="vol"><i onclick="mute()" class="fa-solid fa-volume-high"></i> </div>
+            <div id="vol1"><i onclick="unMute()" class="fa-solid fa-volume-xmark"></i> </div>
+            <div id="starting"></div>
+            <div id="during">
+              <input onchange="changeVolume()" type="range" id="sliding" min="0" max="100" value="20">
+            </div>
+            <div id="ending"></div>
+          </div>
+        </div>
+
+        <!-- duration -->
+        <div id="duration">
+          <div id="start" style="width: 100px; margin-left: -150px; margin-right: 50px;"></div>
+          <div class="dura" id="dura">
+            <input onchange="changeDuration()" type="range" id="slider" min="0" max="100" value="0">
+          </div>
+          <div id="end"></div>
+        </div>
+
+      </div down>
+
+      <!-- content -->
+
+      <div id="content">
+        <div id="my">My Music</div>
+
+        <div id="flex">
+          <button id="songs">Songs</button>
+          <button id="artists">Artists</button>
+          <button id="albums">Albums</button>
+        </div flex>
+        <div id="border"></div>
+        <div id="shuffle">
+          <button id="shuff"> <i class="fa-solid fa-shuffle"></i></button>
+          <button>Shuffle (2)</button>
+          <button>Sort by : <button id="date">Date added</button></button>
+          <button id="genre">Genre : <button id="date">All genres</button></button>
+        </div>
+        <div id="display"></div>
+      </div>
+    </div content>
+
+    <!-- recent play -->
+
+    <div id="recentplay">
+
+    </div recentplay>
+
+    <!-- correct Search result -->
+
+    <div id="result">
+      <div id="for"></div>
+      <div id="correct">
+        <div id="son">Songs</div>
+        <button id="screen"></button>
+      </div>
+    </div result>
+
+    <!-- incorrect search result -->
+    <div id="incorrect">
+      <div id="inc"></div>
+      <div id="inc1"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div id="inc2">Check your spelling or search for something else</div>
+      <div id="else">Try searching for something else</div>
+    </div incorrect>
+  </div groovy>
+  </div>
+
+  <!-- Now playing -->
+
+  <div id="up">
+    <div id="arrow"><i class="fa-solid fa-arrow-left" onclick="back()"></i></div>
+    <div id="noun">
+      <div id="nowplaying"></div>
+      <div id="magic">Unknown Artist * Unknown Album</div>
     </div>
-  
-  
 
- 
-  <div id="showplaylist" style="margin-right: 40px;"></div>
-  <div id="deleteplaylist"></div>
- 
-</div>
-<!-- <div id="distance"></div> -->
-<div id="line"></div>
-<div id="could">
-  <button id="sign"> <i class="fa-regular fa-clock"></i></button>
-  <button id="in">Can't sign in</button>
-</div>
-<div id="gear"><i class="fa-solid fa-gear"></i></div>
-<div id="sportify">
-  <button id="tify"><i class="fa-brands fa-spotify"></i></button>
-  <button id="stream" onmouseover="river()">Stream millions of songs free</button>
-  <button id="get" onmouseover="ocean()">Get sportify</button>
-</div>
-<div id="long"></div>
-</div side><br>
-
-<!-- down -->
-
-<div id="down">
-  <div id="cono">
-    <div id="squaro">
-      <div id="circlo">
-         <div id="doto"></div>
-      </div></button>
+    <!-- duration -->
+    <div id="durationm">
+      <div id="startm"></div>
+      <div class="duram">
+        <input onchange="changeDuration()" type="range" id="sliderm" min="0" max="100" value="0">
+      </div>
+      <div id="endm"></div>
     </div>
-  </div>
- <div id="text">
-  <button id="title"></button><br>
-  <button id="art">Unknown Artist</button>
- </div>
- <div id="controls">
-   <button id="shu"> <i class="fa-solid fa-shuffle"></i></button>
-   <button id="backward" onclick="previous()">  <i class="fa-solid fa-backward-step"></i></button>
-   <button id="faplay"><i class="fa-solid fa-play" onclick="listen()"></i></button>
-   <button id="fapause"><i class="fa-solid fa-pause" onclick="pauseMusic()"></i></button>
-   <button id="forward" onclick="next()"> <i class="fa-solid fa-forward-step"></i></button>
-   <button id="forward"></button>
-   <button id="repeat1" onclick="startAll()"><i class="fa-solid fa-repeat"></i></button>
-   <button id="repeatone" onclick="repeatAll()"><i class="fa-solid fa-repeat"><span id="one">1</span></i></button>
-   
-   <!-- volume -->
-   
-   <div id="volume">
-    <div id="vol" ><i onclick="mute()" class="fa-solid fa-volume-high"></i> </div>
-    <div id="vol1" ><i onclick="unMute()" class="fa-solid fa-volume-xmark"></i> </div>
-    <div id="starting"></div>
-    <div id="during">
-      <input onchange ="changeVolume()" type="range" 
-      id="sliding" min="0" max="100" value="20">
-     </div>
-     <div id="ending"></div>
-  </div>
- </div>
-
-<!-- duration -->
-<div id="duration">
-  <div id="start" style="width: 100px; margin-left: -150px; margin-right: 50px;"></div>
-  <div class="dura" id="dura">
-    <input onchange="changeDuration()" type="range" 
-    id="slider" min="0" max="100" value="0">
-   </div>
-   <div id="end"></div>
-</div>
-
-</div down>
-
-          <!-- content -->
-          
-<div id="content">
-  <div id="my">My Music</div>
-  
-  <div id="flex">
-    <button id="songs">Songs</button>
-    <button id="artists">Artists</button>
-    <button id="albums">Albums</button>
-  </div flex>
-  <div id="border"></div>
-  <div id="shuffle">
-    <button id="shuff"> <i class="fa-solid fa-shuffle"></i></button>
-    <button>Shuffle (2)</button>
-    <button>Sort by : <button id="date">Date added</button></button>
-    <button id="genre">Genre : <button id="date">All genres</button></button>
-  </div>
-  <div id="display"></div>
-  </div>
- </div content>
-
- <!-- recent play -->
-
- <div id="recentplay">
-  
- </div recentplay>
-
- <!-- correct Search result -->
-
- <div id="result">
-  <div id="for"></div>
-  <div id="correct">
-    <div id="son">Songs</div>
-    <button id="screen"></button>
-  </div>
-</div result>
-
-<!-- incorrect search result -->
-<div id="incorrect">
-  <div id="inc"></div>
-  <div id="inc1"><i class="fa-solid fa-magnifying-glass"></i></div>
-  <div id="inc2">Check your spelling or search for something else</div>
-  <div id="else">Try searching for something else</div>
-</div incorrect>
-</div groovy>
-</div> 
-
-<!-- Now playing -->
-
-<div id="up">
-  <div id="arrow"><i class="fa-solid fa-arrow-left" onclick="back()"></i></div>
-   <div id="noun">
-    <div id="nowplaying"></div>
-    <div id="magic">Unknown Artist * Unknown Album</div>
-   </div>
-
-   <!-- duration -->
-   <div id="durationm">
-    <div id="startm"></div>
-    <div class="duram">
-      <input onchange="changeDuration()" type="range" 
-      id="sliderm" min="0" max="100" value="0">
-     </div>
-     <div id="endm"></div>
-  </div>
-   <!-- controls -->
-   <div id="controlsm">
-    <button id="backwardm" onclick="previous()" class="ford">  <i class="fa-solid fa-backward-step"></i></button>
-    <button id="faplaym" class="ford"><i class="fa-solid fa-play" onclick="listen()"></i></button>
-    <button id="fapausem" class="ford"><i class="fa-solid fa-pause" onclick="pauseMusic()"></i></button>
-    <button id="forwardm" onclick="next()" class="ford"> <i class="fa-solid fa-forward-step"></i></button>
-     <button id="shum" class="ford"> <i class="fa-solid fa-shuffle"></i></button>
-    <button id="repeat1m" class="ford" onclick="startAll()"><i class="fa-solid fa-repeat"></i></button>
-    <button id="repeatonem" class="ford" onclick="repeatAll()"><i class="fa-solid fa-repeat"><span id="one">1</span></i></button>
-    <button id="mark1" class="ford"><i class="fa-solid fa-volume-high"></i></button>
-    <button id="mark2" class="ford"><i class="fa-solid fa-volume-xmark"></i></button></div>
+    <!-- controls -->
+    <div id="controlsm">
+      <button id="backwardm" onclick="previous()" class="ford"> <i class="fa-solid fa-backward-step"></i></button>
+      <button id="faplaym" class="ford"><i class="fa-solid fa-play" onclick="listen()"></i></button>
+      <button id="fapausem" class="ford"><i class="fa-solid fa-pause" onclick="pauseMusic()"></i></button>
+      <button id="forwardm" onclick="next()" class="ford"> <i class="fa-solid fa-forward-step"></i></button>
+      <button id="shum" class="ford"> <i class="fa-solid fa-shuffle"></i></button>
+      <button id="repeat1m" class="ford" onclick="startAll()"><i class="fa-solid fa-repeat"></i></button>
+      <button id="repeatonem" class="ford" onclick="repeatAll()"><i class="fa-solid fa-repeat"><span
+            id="one">1</span></i></button>
+      <button id="mark1" class="ford"><i class="fa-solid fa-volume-high"></i></button>
+      <button id="mark2" class="ford"><i class="fa-solid fa-volume-xmark"></i></button>
+    </div>
 
     <div id="playnoww" class="okayed">
-       <!-- <div id="vor" class="vord"></div>
+      <!-- <div id="vor" class="vord"></div>
        <div id="vor1" class="vord">Unknown Artist</div>
        <div id="vor2" class="vord">Unkwon Album</div>
        <div id="vor3" class="vord">duration</div> -->
     </div>
 
-</div up>
+  </div up>
 
-<!-- playlist\ -->
+  <!-- playlist\ -->
 
-<div id="playlist">
-  <div id="laylist">Playlists</div>
-  <button id="liquid"> <i class="fa-solid fa-plus"></i></button>
-  <button id="laylist2">New Playlist</button>
-  <button id="laylist3">Sort by :</button>
-  <button id="laylist4">Date modified</button>
-  <div id="nothing">Nothing to show here. Try a different filter.</div>
-  <div id="shownew"></div>
+  <div id="playlist">
+    <div id="laylist">Playlists</div>
+    <button id="liquid"> <i class="fa-solid fa-plus"></i></button>
+    <button id="laylist2">New Playlist</button>
+    <button id="laylist3">Sort by :</button>
+    <button id="laylist4">Date modified</button>
+    <div id="nothing">Nothing to show here. Try a different filter.</div>
+    <div id="shownew"></div>
 
-</div playlist>
+  </div playlist>
 
-<!-- <div id="playlist1">
+  <!-- <div id="playlist1">
   <div id="laylist1">Playlists</div>
   <button id="liquid1"> <i class="fa-solid fa-plus"></i></button>
   <button id="laylist21">New Playlist</button>
@@ -363,51 +373,52 @@
 
 </div playlist1> -->
 
-<!-- load page -->
-<div id="kinging">
-<div id="king">
-  <div id="king1"><img id="king2" src="./image/groov music logo.jpg" alt="">
+  <!-- load page -->
+  <div id="kinging">
+    <div id="king">
+      <div id="king1"><img id="king2" src="./image/groov music logo.jpg" alt="">
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
 
-<!-- add playlist modal -->
-<div id="addlist">
-<div id="addlist1">
-  <div id="backer" onclick="last()"><i class="fa-solid fa-arrow-left"></i></div>
-  <i class="fa-solid fa-sliders" id="init"></i>
-  <div id="go1"></div>
-  <div id="go2">0 songs * 0 mins</div>
-  <div id="go3">
-    <div><i id="go4" class="fa-solid fa-play"></i></div>&nbsp;
-    <div id="go5">play all</div>
-  <div><i class="fa-solid fa-plus"></i></div>&nbsp;
-    <div id="go6">Add to</div>
-    <div> <i class="fa-solid fa-pencil"></i></div>&nbsp;
-    <div id="go7">Rename</div>
-    <div> <i class="fa-solid fa-thumbtack"></i></div>&nbsp;
-    <div id="go8">Pin to start</div>
-    <div> <i class="fa-solid fa-trash"></i></div>&nbsp;
-    <div>Delete</div>
+  <!-- add playlist modal -->
+  <div id="addlist">
+    <div id="addlist1">
+      <div id="backer" onclick="last()"><i class="fa-solid fa-arrow-left"></i></div>
+      <i class="fa-solid fa-sliders" id="init"></i>
+      <div id="go1"></div>
+      <div id="go2">0 songs * 0 mins</div>
+      <div id="go3">
+        <div><i id="go4" class="fa-solid fa-play"></i></div>&nbsp;
+        <div id="go5">play all</div>
+        <div><i class="fa-solid fa-plus"></i></div>&nbsp;
+        <div id="go6">Add to</div>
+        <div> <i class="fa-solid fa-pencil"></i></div>&nbsp;
+        <div id="go7">Rename</div>
+        <div> <i class="fa-solid fa-thumbtack"></i></div>&nbsp;
+        <div id="go8">Pin to start</div>
+        <div> <i class="fa-solid fa-trash"></i></div>&nbsp;
+        <div>Delete</div>
 
-  </div>
-</div>
-<div id="addlist2"></div>
-<div id="what">What's a playlist without music?</div>
-<div id="boxo">
-  <div id="squarem">
-     <div id="circlem">
-       <div id="dotm"></div>
-     </div>
- </div>
- <div id="what1">Add songs from my collection
-  <p id="what2">Go to Album</p>
-</div>
-</div addlist>
+      </div>
+    </div>
+    <div id="addlist2"></div>
+    <div id="what">What's a playlist without music?</div>
+    <div id="boxo">
+      <div id="squarem">
+        <div id="circlem">
+          <div id="dotm"></div>
+        </div>
+      </div>
+      <div id="what1">Add songs from my collection
+        <p id="what2">Go to Album</p>
+      </div>
+    </div addlist>
 
 
 
 </body>
+
 </html>
 <script src="./groove.js"></script>

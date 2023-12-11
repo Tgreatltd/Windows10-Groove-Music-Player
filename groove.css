@@ -25,7 +25,7 @@ background-color: rgb(0, 162, 255);
 display: flex;
 align-items: center;
 margin-top: -18px;
-/* position: fixed; */
+position: fixed;
 /* top: 685px; */
 }
 
