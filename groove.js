@@ -156,7 +156,7 @@ let music = [
 // }
 // }
 // looper()
-let selection = [];
+
 
 function show() {
     music.forEach(song => {
@@ -421,7 +421,7 @@ function playlists() {
 </button>
 <div id="showname">${go1.innerHTML}</div>`
 }
-
+let selection = [];
 function createPlaylist() {
     showplaylist.innerHTML = ''
     for (let index = 0; index < selection.length; index++) {
@@ -463,7 +463,7 @@ function create() {
 
 
     }
-   
+    localStorage.setItem('pickArray', JSON.stringify(selection))
 }
 
 function deleted(params) {
@@ -582,7 +582,7 @@ function previous() {
 function loaded() {
     timer = setInterval(() => {
         move++
-        if (move == 1) {
+        if (move == 4) {
             groovy.style.display = 'block'
             king.style.display = 'none';
             clearInterval(timer)
@@ -659,7 +659,6 @@ function update() {
 // }
 
 // localStorage.setItem('selectArray', JSON.stringify(music))
-localStorage.setItem('pickArray', JSON.stringify(selection))
 
 function dom() {
     let data = JSON.parse(localStorage.getItem('pickArray'))
