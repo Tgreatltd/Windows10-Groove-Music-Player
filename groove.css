@@ -1079,7 +1079,10 @@ background-color: burlywood;
 margin-left: 20px;
 }
 
-@media(max-width:390px){
+
+
+
+/* @media(max-width:390px){
     #flat{
     display: none;
     }
@@ -1165,7 +1168,7 @@ margin-left: 20px;
 #naming{
 font-size: 10px;
 }
-}
+} */
 
 
 
