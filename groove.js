@@ -283,7 +283,7 @@ function changeVolume() {
     mp3.volume=sliding.value/100
     }
 
-    
+
     // mp3.volume = sliding.value / 100
     // mp3.volume = lumo.value / 100
 }
@@ -463,7 +463,7 @@ function create() {
 
 
     }
-    localStorage.setItem('pickArray', JSON.stringify(selection))
+   
 }
 
 function deleted(params) {
@@ -589,7 +589,7 @@ function loaded() {
         }
     }, 1000);
 }
-// loaded()
+loaded()
 
 // fetch('https://api.napster.com/v2.1/tracks/top?apikey=ZTk2YjY4MjMtMDAzYy00MTg4LWE2MjYtZDIzNjJmMmM0YTdm')
 // .then(res=> res.json())
@@ -659,6 +659,7 @@ function update() {
 // }
 
 // localStorage.setItem('selectArray', JSON.stringify(music))
+localStorage.setItem('pickArray', JSON.stringify(selection))
 
 function dom() {
     let data = JSON.parse(localStorage.getItem('pickArray'))
