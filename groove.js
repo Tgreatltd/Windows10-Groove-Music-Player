@@ -582,7 +582,7 @@ function previous() {
 function loaded() {
     timer = setInterval(() => {
         move++
-        if (move == 4) {
+        if (move == 3) {
             groovy.style.display = 'block'
             king.style.display = 'none';
             clearInterval(timer)
